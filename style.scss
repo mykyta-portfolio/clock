@@ -1,0 +1,90 @@
+@import "fonts&others";
+$pos: center;
+.clock {
+    @include centered();
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-inline: auto;
+    display: flex;
+    justify-content: $pos;
+    align-items: $pos;
+}
+.number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: $pos;
+}
+.number1 {
+    transform: rotate(calc(var(--angle) * 1));
+}
+.number2 {
+    transform: rotate(calc(var(--angle) * 2));
+}
+.number3 {
+    transform: rotate(calc(var(--angle) * 3));
+}
+.number4 {
+    transform: rotate(calc(var(--angle) * 4));
+}
+.number5 {
+    transform: rotate(calc(var(--angle) * 5));
+}
+.number6 {
+    transform: rotate(calc(var(--angle) * 6));
+}
+.number7 {
+    transform: rotate(calc(var(--angle) * 7));
+}
+.number8 {
+    transform: rotate(calc(var(--angle) * 8));
+}
+.number9 {
+    transform: rotate(calc(var(--angle) * 9));
+}
+.number10 {
+    transform: rotate(calc(var(--angle) * 10));
+}
+.number11 {
+    transform: rotate(calc(var(--angle) * 11));
+}
+
+
+.sec {
+    height: 150px;
+    width: 3px;
+    background: #f00;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    transform-origin:  0% 100%;
+}
+.min {
+    height: 130px;
+    width: 6px;
+    background: rgb(0, 47, 255);
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    transform-origin:  0% 100%;
+}
+.hour {
+    height: 109px;
+    width: 9px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    transform-origin:  0% 100%;
+}
+.center {
+    height: 15px;
+    width: 15px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+}

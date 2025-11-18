@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+@mixin centered(){
+display: flex;
+justify-content: center;
+align-items: center;
+}
+*{
+    --angle: 30deg;
+}
+body {
+  font-family: 'Lobster', display;
+  font-size: 48px;
+}
